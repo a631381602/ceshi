@@ -33,8 +33,8 @@ class_dict = {
 
 				}
 
-con = mdb.connect(host="rdsybz38qh9lu992j3b6.mysql.rds.aliyuncs.com",user="gogo",passwd="ab24562660",db="seo_data",charset='utf8');
-# query_file = open('/Users/sunjian/Desktop/ceshi/query_file','w')
+'''连接数据存储mysql（阿里云RDS）'''
+con = mdb.connect(host="",user="",passwd="",db="",charset='utf8');
 query_file = open('/SEO_DATA/ceshi/query_file','w')
 
 for k,v in class_dict.items():

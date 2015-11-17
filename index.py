@@ -27,7 +27,7 @@ mysql_time = time.strftime('%Y-%m-%d',time.localtime(time.time()))
 
 class_list = ['公司简介','公司工资','公司待遇','公司面试','公司怎么样','公司招聘','岗位职责','职位就业前景','职位工资','职位面试','职位招聘','职位待遇']
 
-con = mdb.connect(host="rdsybz38qh9lu992j3b6.mysql.rds.aliyuncs.com",user="gogo",passwd="ab24562660",db="seo_data",charset='utf8');
+con = mdb.connect(host="",user="",passwd="",db="seo_data",charset='utf8');
 cur = con.cursor(mdb.cursors.DictCursor)
 
 for CLASS in class_list:
@@ -123,16 +123,16 @@ con.close()
 
 
 '''邮件发送'''
-mailto_list=['sunjian@kanzhun.com']
-mail_host="smtp.kanzhun.com"  #设置服务器
-mail_user="sunjian@kanzhun.com"    #用户名
-mail_pass="qwer!asdf"   #口令
-mail_postfix="kanzhun.com"  #发件箱的后缀
+mailto_list=['']
+mail_host=""  #设置服务器
+mail_user=""    #用户名
+mail_pass=""   #口令
+mail_postfix=""  #发件箱的后缀
 mail_title = "%s_排名查询进度报告" % resultname     #邮件发送标题
 
 def send_mail(to_list,sub,content):
     #me="hello"+"<"+mail_user+"@"+mail_postfix+">"
-    me="sunjian@kanzhun.com"
+    me=""
     msg = MIMEText(content,_subtype='plain',_charset='gb2312')
     msg['Subject'] = sub
     msg['From'] = me

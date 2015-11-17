@@ -102,13 +102,15 @@ DOWNLOAD_TIMEOUT = 10
 
 '''crawlera账号、密码'''
 CRAWLERA_ENABLED = True
-CRAWLERA_USER = '88aa8b802a7f4626b659dae926ee445b'
-CRAWLERA_PASS = 'ab24562660'
+CRAWLERA_USER = '******'
+CRAWLERA_PASS = '******'
 
-MYSQL_HOST = 'rdsybz38qh9lu992j3b6.mysql.rds.aliyuncs.com'
-MYSQL_DBNAME = 'seo_data'
-MYSQL_USER = 'gogo'
-MYSQL_PASSWD = 'ab24562660'
+
+'''数据存储端mysql账号（阿里云RDS）'''
+MYSQL_HOST = '****'
+MYSQL_DBNAME = '****'
+MYSQL_USER = '***'
+MYSQL_PASSWD = '*****'
 
 ITEM_PIPELINES = {
     'ceshi.pipelines.CeshiPipeline': 300,
